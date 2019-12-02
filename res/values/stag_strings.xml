@@ -350,7 +350,6 @@
     
     <!-- About categorie -->
     <string name="about_category">About</string>
-    <string name="about_title">About</string>
     <string name="about_category_summary">A little (Coz who\'d read this anyway) info abt our team :P</string>
     <string name="about_stag">StagOS</string>
     <string name="about_stag_description">Stag??? \nWe are the StagOS(P.S. Team), we aim at elegance, Material Design being at our core. \nTo start up Pure AOSP was the best option cause what\'s more better than android straight from google. \nNext we need those teensy weensy bits of customisations, \nLike the clock could be to the right instead \nWhat\'s the download speed... and such. So why leave those feelings empty. \nWith Stag we aim at giving a pure andriod experience fulfilling those small itches in the mind. \nDon\'t forget, You need to grow your own Horns, Just kidding enjoy. \nSic Parvis Magna</string>
