@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 StagOS Project
+ * Copyright (C) 2019 Stag-OS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,6 +39,9 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
+import android.os.Bundle;
+import android.widget.TextView;
+
 import com.stag.horns.about.FancyAboutPage;
 
 public class About extends SettingsPreferenceFragment implements
@@ -56,16 +59,28 @@ public class About extends SettingsPreferenceFragment implements
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.about, container, false);
-        FancyAboutPage fancyAboutPage = (FancyAboutPage)view. findViewById(R.id.fancyaboutpage);
+        FancyAboutPage fancyAboutPage = (FancyAboutPage)view.findViewById(R.id.fancyaboutpage);
 
         fancyAboutPage.setCover(R.drawable.coverimg);
         fancyAboutPage.addTwitterLink("https://twitter.com/");
         fancyAboutPage.addGoogleLink("https://plus.google.com/");
         fancyAboutPage.addTelegramLink("https://t.me/HornsOfficial");
         fancyAboutPage.addGitHubLink("https://github.com/StagOS");
+        
+        
+        TextView textView = (TextView)view.findViewById(R.id.maintainers);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DeviceMaintainersFragment nextFrag = new DeviceMaintainersFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), nextFrag, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
 
         return view;
-
     }
 
     @Override
