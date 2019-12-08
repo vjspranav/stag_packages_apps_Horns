@@ -33,7 +33,7 @@
         android:layout_below="@+id/background"
         android:layout_marginStart="30dp"
         android:textSize="20dp"
-        android:textColor="@*android:color/about_text_color_primary"
+        android:textColor="@color/about_text_color_primary"
         android:text="@string/about_stag" />
 
     <TextView
@@ -43,7 +43,7 @@
         android:layout_alignStart="@+id/name"
         android:layout_below="@+id/name"
         android:layout_marginTop="6dp"
-        android:textColor="@*android:color/about_text_color_secondary"
+        android:textColor="@color/about_text_color_secondary"
         android:layout_marginRight="16dp"
         android:text="@string/about_stag_description" />
 
@@ -125,14 +125,14 @@
                         android:text="@string/phenom_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@*android:color/about_text_color_primary"
+                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/phenomdescription"
-                        android:textColor="@*android:color/about_text_color_secondary"
+                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/phenom_description"
@@ -181,14 +181,14 @@
                         android:text="@string/vjs_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@*android:color/about_text_color_primary"
+                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/vjsdescription"
-                        android:textColor="@*android:color/about_text_color_secondary"
+                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/vjs_description"
@@ -237,14 +237,14 @@
                         android:text="@string/pritish_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@*android:color/about_text_color_primary"
+                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/pritishdescription"
-                        android:textColor="@*android:color/about_text_color_secondary"
+                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/pritish_description"
@@ -293,14 +293,14 @@
                         android:text="@string/rakesh_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@*android:color/about_text_color_primary"
+                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/rakeshdescription"
-                        android:textColor="@*android:color/about_text_color_secondary"
+                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/rakesh_description"
@@ -349,14 +349,14 @@
                         android:text="@string/abhimanyu_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@*android:color/about_text_color_primary"
+                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/abhimanyudescription"
-                        android:textColor="@*android:color/about_text_color_secondary"
+                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/abhimanyu_description"
@@ -405,14 +405,14 @@
                         android:text="@string/vinoth_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@*android:color/about_text_color_primary"
+                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/vinothdescription"
-                        android:textColor="@*android:color/about_text_color_secondary"
+                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/vinoth_description"
