@@ -33,7 +33,6 @@
         android:layout_below="@+id/background"
         android:layout_marginStart="30dp"
         android:textSize="20dp"
-        android:textColor="@color/about_text_color_primary"
         android:text="@string/about_stag" />
 
     <TextView
@@ -43,7 +42,6 @@
         android:layout_alignStart="@+id/name"
         android:layout_below="@+id/name"
         android:layout_marginTop="6dp"
-        android:textColor="@color/about_text_color_secondary"
         android:layout_marginRight="16dp"
         android:text="@string/about_stag_description" />
 
@@ -125,14 +123,11 @@
                         android:text="@string/phenom_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@color/about_text_color_primary"
-                        android:layout_marginLeft="16dp"
-                        />
+                        android:layout_marginLeft="16dp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/phenomdescription"
-                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/phenom_description"
@@ -181,14 +176,12 @@
                         android:text="@string/vjs_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/vjsdescription"
-                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/vjs_description"
@@ -237,14 +230,12 @@
                         android:text="@string/pritish_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/pritishdescription"
-                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/pritish_description"
@@ -254,7 +245,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Rakesh Rakhi Samuel -->
+    <!-- Anand Shekhawat -->
     <androidx.cardview.widget.CardView
         android:id="@+id/card4"
         android:layout_width="match_parent"
@@ -279,8 +270,8 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:id="@+id/rakesh"
-                    android:src="@drawable/rakesh"
+                    android:id="@+id/shekhawat"
+                    android:src="@drawable/shekhawat"
                     />
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -289,21 +280,19 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/rakeshname"
-                        android:text="@string/rakesh_name"
+                        android:id="@+id/shekhawatname"
+                        android:text="@string/shekhawat_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/rakeshdescription"
-                        android:textColor="@color/about_text_color_secondary"
+                        android:id="@+id/shekhawatdescription"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
-                        android:text="@string/rakesh_description"
+                        android:text="@string/shekhawat_description"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -349,14 +338,12 @@
                         android:text="@string/abhimanyu_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/abhimanyudescription"
-                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/abhimanyu_description"
@@ -405,14 +392,12 @@
                         android:text="@string/vinoth_name"
                         android:textStyle="bold"
                         android:textSize="22dp"
-                        android:textColor="@color/about_text_color_primary"
                         android:layout_marginLeft="16dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/vinothdescription"
-                        android:textColor="@color/about_text_color_secondary"
                         android:textSize="14dp"
                         android:layout_marginLeft="16dp"
                         android:text="@string/vinoth_description"
@@ -436,9 +421,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:id="@+id/maintainers"
-            android:textColor="@*android:color/about_text_color_primary"
-            android:textSize="25dp"
+            android:textSize="30dp"
             android:text="Maintainers">
         </TextView>     
     </androidx.cardview.widget.CardView>
