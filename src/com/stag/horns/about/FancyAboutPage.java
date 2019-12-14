@@ -36,9 +36,9 @@ import com.stag.horns.about.DiagonalView;
 import com.android.settings.R;
 
 public class FancyAboutPage extends RelativeLayout {
-    private TextView l1,l2,phenomname,vjsname,pritishname,rakeshname,abhimanyuname,vinothname,debjitname,phenomdescription,vjsdescription,pritishdescription,rakeshdescription,abhimanyudescription,vinothdescription,debjitdescription;
+    private TextView l1,l2,phenomname,vjsname,pritishname,shekhawatname,abhimanyuname,vinothname,debjitname,phenomdescription,vjsdescription,pritishdescription,shekhawatdescription,abhimanyudescription,vinothdescription,debjitdescription;
     DiagonalView diagonalView;
-    CircularImageView phenom,vjs,pritish,rakesh,abhimanyu,vinoth,debjit;
+    CircularImageView phenom,vjs,pritish,shekhawat,abhimanyu,vinoth,debjit;
     ImageView gg,tl,tw,git;
     String twitterurl,ggurl,tlurl,githuburl;
     private void init(Context context) {
@@ -52,14 +52,14 @@ public class FancyAboutPage extends RelativeLayout {
         phenomname= findViewById(R.id.phenomname);
         vjsname= findViewById(R.id.vjsname);
         pritishname= findViewById(R.id.pritishname);
-        rakeshname= findViewById(R.id.shekhawatname);
+        shekhawatname = findViewById(R.id.shekhawatname);
         abhimanyuname= findViewById(R.id.abhimanyuname);
         vinothname= findViewById(R.id.vinothname);
         debjitname= findViewById(R.id.debjitname);
         phenomdescription= findViewById(R.id.phenomdescription);
         vjsdescription= findViewById(R.id.vjsdescription);
         pritishdescription= findViewById(R.id.pritishdescription);
-        rakeshdescription= findViewById(R.id.shekhawatdescription);
+        shekhawatdescription = findViewById(R.id.shekhawatdescription);
         abhimanyudescription= findViewById(R.id.abhimanyudescription);
         vinothdescription= findViewById(R.id.vinothdescription);
         debjitdescription= findViewById(R.id.debjitdescription);
@@ -162,7 +162,7 @@ public class FancyAboutPage extends RelativeLayout {
        phenom.setImageResource(Icon);
        vjs.setImageResource(Icon);
        pritish.setImageResource(Icon);
-       rakesh.setImageResource(Icon);
+       shekhawat.setImageResource(Icon);
        abhimanyu.setImageResource(Icon);
        vinoth.setImageResource(Icon);
        debjit.setImageResource(Icon);
@@ -171,7 +171,7 @@ public class FancyAboutPage extends RelativeLayout {
        phenomname.setText(AppName);
        vjsname.setText(AppName);
        pritishname.setText(AppName);
-       rakeshname.setText(AppName);
+       shekhawatname.setText(AppName);
        abhimanyuname.setText(AppName);
        vinothname.setText(AppName);
        debjitname.setText(AppName);
@@ -180,7 +180,7 @@ public class FancyAboutPage extends RelativeLayout {
         phenomdescription.setText(AppDescription);
         vjsdescription.setText(AppDescription);
         pritishdescription.setText(AppDescription);
-        rakeshdescription.setText(AppDescription);
+        shekhawatdescription.setText(AppDescription);
         abhimanyudescription.setText(AppDescription);
         vinothdescription.setText(AppDescription);
         debjitdescription.setText(AppDescription);
