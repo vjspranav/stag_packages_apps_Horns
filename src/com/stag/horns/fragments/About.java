@@ -18,6 +18,7 @@ package com.stag.horns.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -61,7 +62,18 @@ public class About extends SettingsPreferenceFragment implements
         View view = inflater.inflate(R.layout.about, container, false);
         FancyAboutPage fancyAboutPage = (FancyAboutPage)view.findViewById(R.id.fancyaboutpage);
 
-        fancyAboutPage.setCover(R.drawable.coverimg);
+        int currentNightMode = getActivity().getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        switch (currentNightMode) {
+            case Configuration.UI_MODE_NIGHT_NO:
+                // Night mode is not active, we're using the light theme
+                fancyAboutPage.setCover(R.drawable.stag_white);
+                break;
+            case Configuration.UI_MODE_NIGHT_YES:
+                // Night mode is active, we're using dark theme
+                fancyAboutPage.setCover(R.drawable.stag_dark);
+                break;
+        }
+
         fancyAboutPage.addTwitterLink("https://twitter.com/");
         fancyAboutPage.addGoogleLink("https://plus.google.com/");
         fancyAboutPage.addTelegramLink("https://t.me/HornsOfficial");
