@@ -14,7 +14,8 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -106,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:id="@+id/linearLayout">
-                <ImageView
+                <com.stag.horns.about.CircularImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/phenom"
@@ -159,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:id="@+id/linearLayout">
-                <ImageView
+                <com.stag.horns.about.CircularImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/vjs"
@@ -213,7 +214,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:id="@+id/linearLayout">
-                <ImageView
+                <com.stag.horns.about.CircularImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/pritish"
@@ -267,7 +268,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:id="@+id/linearLayout">
-                <ImageView
+                <com.stag.horns.about.CircularImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/shekhawat"
@@ -277,7 +278,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <TextView
+                    <com.stag.horns.about.CircularImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/shekhawatname"
@@ -321,7 +322,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:id="@+id/linearLayout">
-                <ImageView
+                <com.stag.horns.about.CircularImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/abhimanyu"
@@ -375,7 +376,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:id="@+id/linearLayout">
-                <ImageView
+                <CalendarView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/vinoth"
@@ -406,26 +407,90 @@
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-    
+
+    <!-- Debjit Chakraborty -->
     <androidx.cardview.widget.CardView
         android:id="@+id/card7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/card6"
+        android:layout_below="@+id/card5"
         android:layout_marginTop="8dp"
         android:padding="4dp"
         app:cardElevation="4dp"
         app:cardCornerRadius="12dp"
         app:cardUseCompatPadding="true">
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:id="@+id/maintainers"
-            android:textSize="30dp"
-            android:text="Maintainers">
-        </TextView>     
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout">
+                <CalendarView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/debjit"
+                    android:src="@drawable/debjit"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/debjitname"
+                        android:text="@string/debjit_name"
+                        android:textStyle="bold"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="16dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/debjitdescription"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/debjit_description"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card7"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="12dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stag_device"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:id="@+id/maintainers"
+                android:textSize="20sp"
+                android:text="@string/maintainers">
+            </TextView>
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
     
 </RelativeLayout>
