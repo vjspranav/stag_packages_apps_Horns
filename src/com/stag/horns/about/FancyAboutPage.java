@@ -30,7 +30,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.stag.horns.R;
 import com.stag.horns.about.DiagonalView;
 
 import com.android.settings.R;
@@ -66,7 +65,7 @@ public class FancyAboutPage extends RelativeLayout {
         phenom= findViewById(R.id.phenom);
         vjs= findViewById(R.id.vjs);
         pritish= findViewById(R.id.pritish);
-        rakesh= findViewById(R.id.shekhawat);
+        shekhawat= findViewById(R.id.shekhawat);
         abhimanyu = findViewById(R.id.abhimanyu);
         vinoth= findViewById(R.id.vinoth);
         debjit = findViewById(R.id.debjit);
